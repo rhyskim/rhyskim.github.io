@@ -9,15 +9,79 @@
     <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}">
     <link type="application/atom+xml" rel="alternate" href="{{ "/feed.xml" | relative_url }}" title="{{ site.title }}">
+    
+    <!-- 스타일 추가 -->
+    <style>
+      .layout-wrapper {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .sidebar {
+        width: 220px;
+        padding: 1.5rem;
+        background-color: #f9f9f9;
+        border-right: 1px solid #ddd;
+        min-height: 100vh;
+        box-sizing: border-box;
+        position: sticky;
+        top: 0;
+      }
+
+      .sidebar h3 {
+        margin-top: 0;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .sidebar ul li {
+        margin-bottom: 0.5rem;
+      }
+
+      .sidebar ul li a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      .sidebar ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .main-content {
+        flex: 1;
+        padding: 2rem;
+        box-sizing: border-box;
+      }
+    </style>
   </head>
+
   <body>
     <header class="site-header" role="banner">
       {% include header.html %}
     </header>
 
-    <main class="page-content" aria-label="Content">
-      {{ content }}
-    </main>
+    <div class="layout-wrapper">
+      <!-- 좌측 목차 (사이드바) -->
+      <aside class="sidebar">
+        <h3>📚 목차</h3>
+        <ul>
+          <li><a href="/categories/자료구조">자료구조</a></li>
+          <li><a href="/categories/알고리즘">알고리즘</a></li>
+          <li><a href="/categories/데이터베이스">데이터베이스</a></li>
+          <li><a href="/categories/운영체제">운영체제</a></li>
+          <li><a href="/categories/ProblemSolving">Problem Solving</a></li>
+        </ul>
+      </aside>
+
+      <!-- 본문 -->
+      <main class="main-content" aria-label="Content">
+        {{ content }}
+      </main>
+    </div>
 
     <footer class="site-footer h-card">
       {% include footer.html %}
