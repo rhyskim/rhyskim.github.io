@@ -73,3 +73,18 @@ permalink: /
     {% endif %}
   {% endfor %}
 </ul>
+
+---
+
+## 🤷🏻 개발_알쓸신잡 {#misc}
+개발하면서 마주치는 알쓸신잡과 자투리 지식들 정리
+
+<ul>
+  {% for post in site.posts %}
+    {% if post.categories contains "기타" %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---
