@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (toc.querySelector("ul")) return;
 
-  const headers = document.querySelectorAll("h2, h3");
+  const headers = document.querySelectorAll(".main-content h2, .main-content h3");
   if (!headers.length) return;
 
   const ul = document.createElement("ul");
