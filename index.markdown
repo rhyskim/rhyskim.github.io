@@ -86,3 +86,29 @@ permalink: /
     {% endif %}
   {% endfor %}
 </ul>
+
+---
+
+## π Project {#project}
+개발 Project 일지 및 결과물 정리
+
+<ul>
+  {% for post in site.posts %}
+    {% if post.categories contains "Project" %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---
+
+## Ⓢ Spring {#spring}
+Spring 관련된 세세한 개념 정리
+
+<ul>
+  {% for post in site.posts %}
+    {% if post.categories contains "Spring" %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</li>
+    {% endif %}
+  {% endfor %}
+</ul>
