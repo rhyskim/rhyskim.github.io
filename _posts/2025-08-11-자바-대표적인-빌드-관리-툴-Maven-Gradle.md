@@ -6,7 +6,7 @@ title:  "빌드 관리 도구 : Maven과 Gradle"
 
 date:  2025-08-11 20:00:00 +0900
 
-categories: [기타]
+categories: [Spring]
 
 tags: [Maven, Gradle, 빌드 관리 도구, 장단점, 차이]
 
