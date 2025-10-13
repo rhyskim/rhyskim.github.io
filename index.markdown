@@ -107,7 +107,7 @@ permalink: /
 
 <ul>
   {% for post in site.posts %}
-    {% if post.categories contains "Spring" %}
+    {% if post.categories contains "ms" %}
       <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</li>
     {% endif %}
   {% endfor %}
@@ -120,7 +120,7 @@ permalink: /
 
 <ul>
   {% for post in site.posts %}
-    {% if post.categories contains "Spring" %}
+    {% if post.categories contains "cn" %}
       <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</li>
     {% endif %}
   {% endfor %}
@@ -133,7 +133,7 @@ permalink: /
 
 <ul>
   {% for post in site.posts %}
-    {% if post.categories contains "Spring" %}
+    {% if post.categories contains "cp" %}
       <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</li>
     {% endif %}
   {% endfor %}
