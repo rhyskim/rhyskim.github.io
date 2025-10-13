@@ -102,8 +102,34 @@ permalink: /
 
 ---
 
-## Ⓢ Spring {#spring}
-Spring 관련된 세세한 개념 정리
+## Ⓢ 기계 학습 {#ms}
+제일 재밌는 기계 학습의 세상
+
+<ul>
+  {% for post in site.posts %}
+    {% if post.categories contains "Spring" %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---
+
+## Ⓢ 컴퓨터 네트워크 {#cn}
+컴퓨터 네트워크 수업 요약
+
+<ul>
+  {% for post in site.posts %}
+    {% if post.categories contains "Spring" %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date: "%Y-%m-%d" }})</li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+---
+
+## Ⓢ 컴퓨터 그래픽스 {#cg}
+컴퓨터 그래픽스 수업 요약
 
 <ul>
   {% for post in site.posts %}
